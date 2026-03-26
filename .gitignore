@@ -29,9 +29,20 @@ __pycache__/
 venv/
 .env/
 env/
+.env
 
-# IDEs
-.idea/
-.vscode/
+# Node / Next.js
+node_modules/
+.next/
+out/
+build/
+dist/
+
+# Java / Spring Boot
+target/
+*.jar
+*.war
+.mvn/
+
 *.swp
 *.swo

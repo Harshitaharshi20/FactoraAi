@@ -1,0 +1,31 @@
+version: '3.8'
+
+services:
+  ai-service:
+    build: 
+      context: ./ai-service
+      dockerfile: Dockerfile
+    ports:
+      - "8000:8000"
+    environment:
+      - PYTHONUNBUFFERED=1
+
+  backend:
+    build: 
+      context: ./backend
+      dockerfile: Dockerfile
+    ports:
+      - "8080:8080"
+    depends_on:
+      - ai-service
+    environment:
+      - AI_SERVICE_URL=http://ai-service:8000/analyze
+
+  frontend:
+    build: 
+      context: ./frontend/factoraai
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    depends_on:
+      - backend
