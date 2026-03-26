@@ -2,14 +2,30 @@
 
 Welcome to FactoraAi!
 
-## Setup
-This project has been initialized with Git.
+FactorAI — Misinformation Detection System
 
-To link this to a GitHub repository:
-1. Create a new repository on [GitHub](https://github.com/new).
-2. Run the following commands:
-   ```bash
-   git remote add origin <your-github-repo-url>
-   git branch -M main
-   git push -u origin main
-   ```
+## 🧠 Overview
+
+FactorAI is an AI-powered system that detects fake content, explains why it is misleading, visualizes its spread, and helps prevent resharing.
+
+## ✨ Features
+
+* Fake vs Real detection
+* Highlight misleading content
+* Confidence score
+* Spread visualization
+* Reshare prevention system
+
+## 🏗️ Tech Stack
+
+* Frontend: Next.js
+* Backend: Spring Boot
+* AI Service: FastAPI
+
+## 🚀 How It Works
+
+User Input → AI Analysis → Explanation → Spread Graph → Prevention
+
+## 📌 Status
+
+Hackathon MVP 🚀
